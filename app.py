@@ -16,6 +16,10 @@ sample_data = [
 
 ]
 
+@app.route('/')
+def api_test:
+    return "foo"
+
 @app.route('/sample', methods=["GET"])
 def api_sample():
     if id in request.args:
