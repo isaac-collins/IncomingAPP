@@ -17,7 +17,7 @@ sample_data = [
 ]
 
 @app.route('/')
-def api_test:
+def api_test():
     return "foo"
 
 @app.route('/sample', methods=["GET"])
